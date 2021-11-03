@@ -10,5 +10,9 @@ class BinaryTree {
   constructor(){
     this.root = null
   }
+
+  insert(val){
+    let node = new Node(val)
+  }
 }
 
