@@ -18,12 +18,12 @@ describe('#goodbye()', () => {
 
 describe('#heap.insert()', () => {
   it('Should add to values', () => {
-    expect(heap.insert(5)).to.equal('Inserted')
+    expect(JSON.stringify(heap.insert(5))).to.equal(JSON.stringify([5]))
   })
 })
 
 describe('#heap.insert()', () => {
   it('Should add to values', () => {
-    expect(heap.insert(3)).to.equal('Inserted')
+    expect(JSON.stringify(heap.insert(3))).to.equal(JSON.stringify([3,5]))
   })
 })

@@ -6,7 +6,7 @@ class MinimumHeap{
   insert(val){
     this.values.push(val)
     this.bubbleUp(this.values.length - 1)
-    return `Inserted`
+    return this.values
   }
 
   bubbleUp(idx){
@@ -19,4 +19,4 @@ class MinimumHeap{
 }
 
 let heap = new MinimumHeap
-exports = heap
+module.exports = heap
