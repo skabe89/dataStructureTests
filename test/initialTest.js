@@ -21,3 +21,9 @@ describe('#heap.insert()', () => {
     expect(heap.insert(5)).to.equal('Inserted')
   })
 })
+
+describe('#heap.insert()', () => {
+  it('Should add to values', () => {
+    expect(heap.insert(3)).to.equal('Inserted')
+  })
+})
