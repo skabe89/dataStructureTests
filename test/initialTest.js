@@ -39,3 +39,15 @@ describe('#heap.insert()', () => {
     expect(JSON.stringify(heap.insert(2))).to.equal(JSON.stringify([1,2,3,5]))
   })
 })
+
+describe('#heap.remove()', () => {
+  it('Should remove minimum value', () => {
+    expect((heap.remove())).to.equal(1)
+  })
+})
+
+describe('#heap.remove()', () => {
+  it('Values should be in order', () => {
+    expect((JSON.stringify(heap.values))).to.equal(JSON.stringify([2,3,5]))
+  })
+})

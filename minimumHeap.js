@@ -16,6 +16,17 @@ class MinimumHeap{
       this.bubbleUp(parent)
     }
   }
+
+  remove(){
+    if(this.values.length === 0) return undefined
+    if(this.values.length === 1) return this.values.pop()
+    //[this.values[0], this.values[this.values.length - 1]] = [this.values[this.values.length - 1], this.values[0]]
+    let last = this.values[this.values.length - 1]
+    this.values[this.values.length - 1 ] = this.values[0]
+    this.values[0] = last
+    let min = this.values.pop()
+    return min
+  }
 }
 
 let heap = new MinimumHeap
