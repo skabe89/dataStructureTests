@@ -27,3 +27,15 @@ describe('#heap.insert()', () => {
     expect(JSON.stringify(heap.insert(3))).to.equal(JSON.stringify([3,5]))
   })
 })
+
+describe('#heap.insert()', () => {
+  it('Should add to values', () => {
+    expect(JSON.stringify(heap.insert(1))).to.equal(JSON.stringify([1,5,3]))
+  })
+})
+
+describe('#heap.insert()', () => {
+  it('Should add to values', () => {
+    expect(JSON.stringify(heap.insert(2))).to.equal(JSON.stringify([1,2,3,5]))
+  })
+})
