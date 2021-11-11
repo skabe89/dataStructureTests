@@ -48,6 +48,6 @@ describe('#heap.remove()', () => {
 
 describe('#heap.remove()', () => {
   it('Values should be in order', () => {
-    expect((JSON.stringify(heap.values))).to.equal(JSON.stringify([2,3,5]))
+    expect((JSON.stringify(heap.values))).to.equal(JSON.stringify([2,5,3]))
   })
 })
