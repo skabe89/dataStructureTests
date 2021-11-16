@@ -13,6 +13,10 @@ class BinaryTree {
 
   insert(val){
     let node = new Node(val)
+    if(!this.root) this.root = node
+    return this.root.val
   }
 }
 
+let tree = new BinaryTree
+module.exports = tree

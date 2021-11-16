@@ -1,6 +1,7 @@
 const expect = require('chai').expect
 const validator = require('../initialTest')
 const heap = require('../minimumHeap')
+const tree = require('../binaryTree')
 
 
 
@@ -49,5 +50,11 @@ describe('#heap.remove()', () => {
 describe('#heap.remove()', () => {
   it('Values should be in order', () => {
     expect((JSON.stringify(heap.values))).to.equal(JSON.stringify([2,5,3]))
+  })
+})
+
+describe('tree', () => {
+  it('Should create node as root', () => {
+    expect(tree.insert(5)).to.equal(5)
   })
 })
