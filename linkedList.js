@@ -25,6 +25,10 @@ class LinkedList{
             curr.next = node
             this.length++
         }
+        return node.val
     }
-    
+
 }
+
+let list = new LinkedList
+module.exports = list
