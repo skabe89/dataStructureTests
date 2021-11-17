@@ -19,7 +19,7 @@ class LinkedList{
         }
         else{
             let curr = this.head
-            while(curr){
+            while(curr.next){
                 curr = curr.next
             }
             curr.next = node

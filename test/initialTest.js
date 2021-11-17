@@ -65,3 +65,16 @@ describe('linkedList', () => {
     expect(list.insert(5)).to.equal(5)
   })
 })
+
+describe('linkedList', () => {
+  it('Should add node to list', () => {
+    expect(list.insert(2)).to.equal(2)
+  })
+})
+
+describe('linkedList', () => {
+  it('Should have 2 nodes in list', () => {
+    expect(list.length).to.equal(2)
+  })
+})
+
