@@ -28,6 +28,21 @@ class LinkedList{
         return node.val
     }
 
+    shift(){
+        if(this.length === 0) return undefined
+        if(this.length === 1){
+            let node = this.root
+            this.root = null
+            return node
+        }
+        if(this.length > 1){
+            let node = this.root
+            this.root = node.next
+            node.next = null
+            return node
+        }
+    }
+
 }
 
 let list = new LinkedList

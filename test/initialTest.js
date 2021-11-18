@@ -78,3 +78,9 @@ describe('linkedList', () => {
   })
 })
 
+describe('linkedList', () => {
+  it('Should have 2 nodes in list', () => {
+    expect(list.shift()).to.equal(5)
+  })
+})
+
