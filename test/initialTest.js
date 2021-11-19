@@ -79,13 +79,13 @@ describe('linkedList', () => {
 })
 
 describe('linkedList', () => {
-  it('Should remove and return root', () => {
+  it('Should remove and return node', () => {
     expect(list.shift()).to.equal(5)
   })
 })
 
 describe('linkedList', () => {
-  it('Should remove and return root', () => {
+  it('Should remove and return node', () => {
     expect(list.shift()).to.equal(2)
   })
 })

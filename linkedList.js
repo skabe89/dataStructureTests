@@ -31,15 +31,17 @@ class LinkedList{
     shift(){
         if(this.length === 0) return undefined
         if(this.length === 1){
-            let node = this.root
-            this.root = null
-            return node
+            let node = this.head
+            this.head = null
+            this.length --
+            return node.val
         }
         if(this.length > 1){
-            let node = this.root
-            this.root = this.root.next
+            let node = this.head
+            this.head = this.head.next
             node.next = null
-            return node
+            this.length --
+            return node.val
         }
     }
 
