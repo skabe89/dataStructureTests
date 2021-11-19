@@ -79,8 +79,20 @@ describe('linkedList', () => {
 })
 
 describe('linkedList', () => {
-  it('Should have 2 nodes in list', () => {
+  it('Should remove and return root', () => {
     expect(list.shift()).to.equal(5)
+  })
+})
+
+describe('linkedList', () => {
+  it('Should remove and return root', () => {
+    expect(list.shift()).to.equal(2)
+  })
+})
+
+describe('linkedList', () => {
+  it('Should remove nodes', () => {
+    expect(list.length).to.equal(0)
   })
 })
 

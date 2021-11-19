@@ -37,7 +37,7 @@ class LinkedList{
         }
         if(this.length > 1){
             let node = this.root
-            this.root = node.next
+            this.root = this.root.next
             node.next = null
             return node
         }
