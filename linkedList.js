@@ -45,6 +45,18 @@ class LinkedList{
         }
     }
 
+    pop(){
+        if(this.length === 0) return undefined
+        if(this.length === 1) return this.shift()
+        let curr = this.head
+        while(curr.next){
+            curr = curr.next
+        }
+        let node = curr.next
+        curr.next = null
+        return node
+    }
+
 }
 
 let list = new LinkedList

@@ -79,13 +79,13 @@ describe('linkedList', () => {
 })
 
 describe('linkedList', () => {
-  it('Should remove and return node', () => {
+  it('Should remove and return node from front of LL', () => {
     expect(list.shift()).to.equal(5)
   })
 })
 
 describe('linkedList', () => {
-  it('Should remove and return node', () => {
+  it('Should remove and return node from front of LL', () => {
     expect(list.shift()).to.equal(2)
   })
 })
@@ -93,6 +93,24 @@ describe('linkedList', () => {
 describe('linkedList', () => {
   it('Should remove nodes', () => {
     expect(list.length).to.equal(0)
+  })
+})
+
+describe('linkedList', () => {
+  it('Should add node to list', () => {
+    expect(list.insert(2)).to.equal(2)
+  })
+})
+
+describe('linkedList', () => {
+  it('Should add node to list', () => {
+    expect(list.insert(7)).to.equal(7)
+  })
+})
+
+describe('linkedList', () => {
+  it('Should remove and return node from end of LL', () => {
+    expect(list.pop()).to.equal(7)
   })
 })
 
